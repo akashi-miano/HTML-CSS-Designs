@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animation Practice</title>
+	<style>
+		*{
+		margin:0;
+		text-align: center;
+		}
+		.btn{
+		display: flex;
+		justify-content: space-between;
+		}
+		h1{
+			color: #fff;
+			text-align: center;
+			font-size: 3em;
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			text-align: center;
+			text-transform: capitalize;
+			animation: move 2s infinite;
+		}
+		
+		@keyframes move{
+			0% { transform: translate(0,0);
+
+			}
+
+			50%{
+			 transform: translate(0,-15px);
+			}
+
+			100% { transform: translate(0,0);
+
+			}
+		}
+	.btn1{
+		margin-left: 30px; 
+	}
+	.btn2{
+		margin-right: 30px;
+	}
+		.btn .button{
+			border: 2px solid #fff;
+			font-size: 140%;
+			padding: 3px;
+			color: #fff;
+			background-color: transparent;
+			font-weight: 700;
+			animation: buttons 2.2s infinite;
+			margin-top: 30px;
+			cursor: pointer;
+		}
+		@keyframes buttons{
+			0%{
+				padding: 5px 10px;
+				border-radius: 15px;
+		}
+			50%{
+				padding: 5px 25px;
+				border-radius: 10px;
+
+			}
+					100%{
+				padding: 5px 10px;
+				border-radius: 15px;
+				}
+		}
+		
+		body {
+			background: url("https://media.istockphoto.com/photos/underwater-point-of-view-in-shallow-tropical-lagoon-with-sand-and-picture-id1203438200?k=20&m=1203438200&s=170667a&w=0&h=8QRJep1agYarLuLo8nSfyL1CIh9F19EPGvTDxexFx8o=") no-repeat;
+			background-image:  url("https://www.teahub.io/photos/full/42-423398_587450254-under-sea-wallpaper-underwater-ocean-floor-ocean.jpg");
+			background-size: cover;
+		}
+		.img{
+			height: 50px;
+			width: 50px;
+			border-radius: 9999px;
+		}
+		.bubles{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			justify-content: space-around;
+			animation: buble 5s infinite linear;
+		}
+		.img1{
+			animation: buble 1s infinite linear;
+			height: 20px;
+			width: 20px;
+		}
+		.img2{
+			animation: buble 5s infinite linear;
+			height: 50px;
+			width: 50px;
+		}
+		.img3{
+			animation: buble 3s infinite linear;
+			height: 40px;
+			width: 40px;
+		}
+		.img4{
+			animation: buble 7s infinite linear;
+			height: 60px;
+			width: 60px;
+		}
+		.img5{
+			animation: buble 3.5s infinite linear;
+			height: 50px;
+			width: 50px;
+		}
+		.img6{
+			animation: buble 5s infinite linear;
+			height: 50px;
+			width: 50px;
+		}
+		.img7{
+			animation: buble 3.9s infinite linear;
+			height: 42px;
+			width: 42px;
+		}
+		@keyframes buble{
+			0% {transform: translate(0,0)
+			}
+			100%{ transform: translate(0,-700px);opacity: 0;
+			}
+		}	
+		.button:hover{
+			transition: 0.7s;
+			transform: scale(1.2);
+			color: #000;
+			font-size: 140%;
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<h1>be silent like deep water 🐬</h1>	
+		<div class="btn">
+			<button class="button btn1">sign in</button>
+			<button class="button btn2">sign in</button>
+		</div>
+	</header>
+	<div class="bubles">
+		<img class="img1 img" src="https://e1.pngegg.com/pngimages/602/131/png-clipart-colorful-bubbles-blue-bubble-art-thumbnail.png" alt="">
+		<img class="img2 img" src="https://e1.pngegg.com/pngimages/602/131/png-clipart-colorful-bubbles-blue-bubble-art-thumbnail.png" alt="">
+		<img class="img3 img" src="https://e1.pngegg.com/pngimages/602/131/png-clipart-colorful-bubbles-blue-bubble-art-thumbnail.png" alt="">
+		<img class="img4 img" src="https://e1.pngegg.com/pngimages/602/131/png-clipart-colorful-bubbles-blue-bubble-art-thumbnail.png" alt="">
+		<img class="img5 img" src="https://e1.pngegg.com/pngimages/602/131/png-clipart-colorful-bubbles-blue-bubble-art-thumbnail.png" alt="">
+		<img class="img6 img" src="https://e1.pngegg.com/pngimages/602/131/png-clipart-colorful-bubbles-blue-bubble-art-thumbnail.png" alt="">
+		<img class="img7 img" src="https://e1.pngegg.com/pngimages/602/131/png-clipart-colorful-bubbles-blue-bubble-art-thumbnail.png" alt="">
+	</div>
+</body>
+</html>
