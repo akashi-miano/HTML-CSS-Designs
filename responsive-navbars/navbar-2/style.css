@@ -1,0 +1,149 @@
+/*global styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/*flexbox and navbar*/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1b1b1b;
+    border-top: solid #1b1b1b; 
+    width: 100vw;
+    z-index: 999;
+    position: fixed;
+        top: 0;
+}
+.main-ul { 
+    display: flex;
+    margin-right: 20px;
+}
+.main-li { 
+    margin: 15px 25px;
+}
+
+.main-li a {
+    font-size: 20px;
+    padding: 5px 20px; 
+}
+
+.logo { 
+   margin: 5px 0;
+   margin-left: 250px;
+   width: 100%;
+    transition: .7s ease;
+}
+
+.logo:hover { 
+    cursor: pointer;
+}
+
+/*hover styles*/
+
+.link:hover {
+    color: cyan;
+    box-shadow: 0 0 15px cyan;
+    border-radius: 5px;
+}
+
+
+.sub-ul {
+    display: flex;
+    flex-flow: column wrap;
+    position: absolute;
+        top: 52px;
+        right: 315px;
+
+}
+
+
+.sub-li { 
+    background-color: #1b1b1b;
+    border-bottom: 3px solid black;
+    padding: 10px;
+    width: auto;
+    display: none
+}
+
+.sub-li .sub-link {
+    font-size: 17px;
+}
+
+.sub-li:first-child {
+    border-top: 1px solid cyan;
+}
+
+.sub-link:hover { 
+    color: cyan;
+    font-weight: bold;
+}
+
+.main-ul .main-li:hover .sub-ul .sub-li{ 
+    display: block;
+}
+
+
+.main-ul .sub-css { 
+    position: absolute;
+        right: 170px;
+}
+
+.main-ul .sub-js { 
+    position: absolute;
+        right: 15px;
+}
+
+
+.plus-1 { 
+    display: inline-block;
+    position: absolute;
+        right: -15px;
+        top: 100px;
+}
+
+
+.main-ul .sub-sub-css { 
+    width: 135px;
+    border-top: 1px solid cyan;
+    position: absolute;
+        right: -130px;
+        top: 125px;
+    display: none;
+
+}
+
+
+.main-ul .sub-css .sub-li:hover .sub-sub-css { 
+    display: block;
+}
+
+/*mobile*/
+
+.mobile { 
+    display: none
+}
+
+/* logo animation */
+
+@keyframes move { 
+    50% { 
+        transform:  translate(280px,0);
+    }
+    
+    0%,100% { 
+        transform: translate(0,0);
+    }
+}
+
+.logo { 
+    animation: move .7s 1 linear;
+}

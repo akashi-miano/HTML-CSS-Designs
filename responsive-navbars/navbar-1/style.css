@@ -1,0 +1,123 @@
+/* global styles*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/** elemnt styles **/
+
+body {
+        background-color: #eb3838;
+}
+
+/* flexbox  and navbar styles*/
+
+.main-ul {
+    display: flex;
+    justify-content: center;
+}
+
+.main-ul {
+    height: 50vh;
+}
+
+.main-header {
+    text-align: center;
+    margin: 15px 0;
+}
+.main-ul li a { 
+    height: 9vh;
+    width: 15vw;
+    background-color: #333;
+}
+
+.main-ul li .contact {
+    border-right: none;
+}
+
+.main-ul li a {
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 25px;
+    text-align: center;
+    border-right: 2px solid #fff;
+    width: 18vw;
+    height: 9vh;
+}
+
+.sub-ul {
+    display: none;
+}
+
+.main-ul .tgl {
+    display: none;
+}
+/* Hoever effects **/
+
+.link a:hover {
+    background-color: #474141;
+}
+
+/** mobile styles and media queries*/
+
+@media (max-width: 700px) {
+
+    .main-ul {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .main-ul li a{
+        width: 100vw;
+        border-right: none;
+        margin: 2px 0;
+    }
+    
+    .main-ul .contact {
+        border-bottom: none;
+    }
+
+    .main-ul .tgl {
+        display: block;
+        position: absolute;
+        top: 100px;
+    }
+    
+    .main-ul #tgl:hover .sub-ul {
+        display: flex;
+        flex-flow: column wrap;
+        margin-bottom: -50px;;
+        background-color: #474141;
+    }
+
+    #tgl .sub-ul a {
+        border-bottom: 2px solid #fff;
+    }
+    #tgl .sub-ul .contact {
+        border-bottom: none;        
+    }
+    
+    .main-nav .tgl:hover .sub-ul {
+        border-bottom: 2px solid #fff;
+    }
+    .sub-ul:hover  .tgl{
+        border-bottom: 2px solid #fff            
+    }
+    
+#tgl a:hover {
+    background-color: #3d3737;
+}
+
+#tgl{
+    margin-bottom: -140px;
+}
+
+.link {
+        display: none;
+    }
+}
