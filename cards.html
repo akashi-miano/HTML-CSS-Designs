@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0"> 
+	<title>Flexbox!!</title>
+<style>
+		section h1{
+		font-size: 25px;
+		font-weight: bold;
+		text-transform: capitalize;
+		margin: 10px;
+		text-align: center;
+		}
+		*{
+			overflow: auto;
+			text-overflow: auto;
+		}
+		img{
+			border: solid grey 5px;
+			border-radius: 9999px;
+			width: 150px;
+			height: 150px;
+		}	
+		.parent{
+			display: flex;
+			background-color: #333;
+			justify-content: space-around;
+		}
+		section{
+		background-color: #fff;
+		width: 30vw;
+		height: 75vh;
+		margin-top: 25px;
+		transition: 0.5s;
+		}
+		body{
+			background-color: #333;
+		}
+		p{
+			text-indent: 25px;
+			margin-left: 25px;
+			width: 85%
+		}
+		section:hover{
+			background-color:#ff4dd2;
+		}
+		
+		@media (max-width: 1000px) {
+				
+			.parent {
+				
+				flex-flow:  wrap;
+				margin: 45px;
+
+		
+			}
+		} 
+
+		@media (max-width: 700px) {
+				
+			.parent {
+				
+				flex-flow:  column wrap;
+			}
+		} 
+
+</style>
+</head>
+<body>
+<div class="parent">
+	<section class="sec">
+		
+		<img class="img img1" src="https://cdn.mos.cms.futurecdn.net/CT9xCjqrhnPD4ivB6B8Hqe.jpg" alt="">
+		<h1>web design</h1>
+		<p>Elit quod quam reprehenderit et voluptates A commodi ea asperiores obcaecati dolores. Totam excepturi inventore.0</p> 
+
+	</section>
+	<section class="sec">
+		
+		<img class="img img1" src="https://www.freepik.com/blog/app/uploads/2017/03/an-introduction-to-graphic-design.jpg" " alt="">
+		<h1>graphics design</h1>
+		<p>Elit quod quam reprehenderit et voluptates A commodi ea asperiores obcaecati dolores. Totam excepturi inventore.0</p> 
+
+	</section>
+	<section class="sec">
+		
+		<img class="img img1" src="https://radiantbrands.com/wp-content/uploads/2021/12/https___specials-images.forbesimg.com_imageserve_5f81c6e02c6b5f49c897471f_0x0.jpg" alt="">
+		<h1>email marketing</h2>
+		<p>Elit quod quam reprehenderit et voluptates A commodi ea asperiores obcaecati dolores. Totam excepturi inventore.0</p> 
+
+	</section>
+</div>
+</body>
+</html>
+
