@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet"> 
+	<title>Form!!!</title>
+	<style>
+			* {
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				box-sizing: border-box;
+				font-weight: bold;
+				font-size: 20px;
+				scroll-behavior: smooth;
+				margin: 2.5px 0;
+			}
+			body{
+				background: url("https://c4.wallpaperflare.com/wallpaper/158/403/585/unicorn-lock-phantom-ice-wallpaper-preview.jpg") no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			.hdr {
+				border: solid black;
+				width: 70vw;
+				height: 70vh;
+				display: block;
+				margin: auto;
+				display: flex;
+				background-color: rgba(20, 20, 20, 0.8);
+				position: relative;
+			}
+			.parent {
+				height: 100vh;	
+				display: flex;
+			}
+			.main span,input {
+				position: relative;
+				right: -25px;
+			}
+			label{
+				color: #fff;
+				text-transform: uppercase;
+			    font-family: 'Pushster', cursive;
+			}	
+			.first-name{
+					display: inline-block;	
+			}
+			input {
+				border: 3.3px solid black;
+				border-radius: 15px;
+				width: 35vw;
+			}
+			.msg{
+				width: 33%;
+				height: 100%;
+				position: absolute;
+				right: 0;
+			}
+			.txt{
+				height: 85%;
+				position: absolute;
+				bottom:0; right: 0;
+				margin-bottom: 10px;
+				margin-right: 10px;
+				width: 95%;
+				background: linear-gradient(white,white) padding-box, linear-gradient(180deg, red,orange,yellow,green,blue,purple,pink) border-box;
+				border: 3px solid transparent;
+			}
+			.title{
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 110%;
+				position: absolute;
+				top: 0; left: 0;
+			    font-family: 'Pushster', cursive;
+			}
+			button{
+				margin-top: 10px;
+				width: 35%;
+				height:	15%;
+				border: 2px solid black;
+				border-radius: 15px;
+				background-color: #c73838;
+				color: #fff;
+				transition: .7s ease;	
+				text-transform: uppercase;
+				animation: move 3s infinite linear;
+			}
+			button:hover {
+				transform: scale(1.1);
+				background-color: #ff0000;
+			}
+	
+	</style>
+</head>
+<body>
+	<div class="parent">
+	<header class="hdr">
+		<div class="main">
+			<label class="first-name" for="first-name">first name</label><br><input id="first-name"type="text"><br>
+			<label class="last-nam" for="last-name">last name</label><br><input id="last-name" type="text"><br>
+			<label class="email" for="email">email address</label><br><input id="email" type="email">
+			<button>submit</button>
+		</div>
+		<div class="msg"> 
+			<h2 class="title">message</h2>
+			<textarea id="msg" name="msg" class="txt" cols="14" rows="11"></textarea>
+		</div>
+	</header>
+	</div>	
+</body>
+</html>
