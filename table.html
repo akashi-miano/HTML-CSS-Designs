@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Tables!!!</title>
+	<style>
+			.t1{
+				margin: 6px;
+			}
+			*{
+				margen: 0;
+				padding: 0;
+				box-sizing: border-box;
+				text-align: center;
+				font-family: sans-serif;
+			}
+			.t1 *{
+				border:  3px solid cyan;
+				table-collapse: collapse;
+				width: 33%
+			}
+			.t1{
+				height: 85vh;
+			}
+			.h1{
+					text-transform: capitalize;
+					background-color: teal;
+					font-size: 140%;
+					color: #fff;
+			}
+				.su{
+					width: 40%;
+					padding: 100px 150px;
+					height: 7.5vh;
+				}
+
+			.r2,.r3,.r3,.r4,.r5,.r6,.r6i,.su{
+				background-color: #232529;
+				color: #fff;
+			}
+			.r1,.r7{
+				background-color: cyan;
+				border: 3px solid cyan;
+			}
+			.su{
+				border: 2px solid #232529;
+				border-radius: 15px;
+				padding: 5px 20px;
+			}
+			.main{
+					display: flex;
+			}
+			@media (max-width: 600px){
+				.main{
+					flex-flow: column wrap;
+					align-content: flex-start;
+					justify-content: space-around;
+				}
+			}
+			table:hover th{
+				background-color: #eb2323 ;	
+				transition: .7s ease;
+				}
+			table:hover .r1 {
+				background-color: #f06060;
+				transition: .7s ease;
+				
+			}
+			table:hover .r7 {
+				background-color: #f06060;
+				transition: .7s ease;
+				
+			}
+			table:hover{
+				transform: scale(1.05);
+				transition: .7s ease;
+			}
+
+
+			table {
+				width: 33.33%
+			}
+
+	</style>
+</head>
+<body>
+			
+			<div class="main">
+				
+					<table class="t1">
+						<thead>
+						<tr>
+							<th class="h1">basic</th>
+						</tr>
+						</thead>
+						<tbody>
+									
+						<tr>
+							<td class="r1">$ 30/month</td>
+						</tr>
+						<tr>
+							<td class="r2">20GB Storage</td>
+						</tr>
+						<tr>
+							<td class="r3">100 Domains </td>
+						</tr>
+						<tr>
+							<td class="r4">1TB Bandwidth</td>
+						</tr>
+						<tr>
+							<td class="r5">1000 Email Accounts</td>
+							
+						</tr>
+						<tr>
+							<td class="r6">24/7 support</td>
+						</tr>
+						<tr>
+							<td class="r7"><button class="su">Sign Up</button></td>
+						</tr>
+							
+						</tbody>
+					</table>
+					
+
+
+					<table class="t1 t2">
+						<thead>
+						<tr>
+							<th class="h1">standard</th>
+						</tr>
+						</thead>
+						<tbody>
+									
+						<tr>
+							<td class="r1">$ 50/month</td>
+						</tr>
+						<tr>
+							<td class="r2">100GB Storage</td>
+						</tr>
+						<tr>
+							<td class="r3">500 Domains </td>
+						</tr>
+						<tr>
+							<td class="r4">2TB Bandwidth</td>
+						</tr>
+						<tr>
+							<td class="r5">20 Email Accounts</td>
+							
+						</tr>
+						<tr>
+							<td class="r6">24/7 support</td>
+						</tr>
+						<tr>
+							<td class="r7"><button class="su">Sign Up</button></td>
+						</tr>
+							
+						</tbody>
+					</table>
+					
+
+
+					<table class="t1 t3">
+						<thead>
+						<tr>
+							<th class="h1">premium</th>
+						</tr>
+						</thead>
+						<tbody>
+									
+						<tr>
+							<td class="r1">$ 70/month</td>
+						</tr>
+						<tr>
+							<td class="r2">250GB Storage</td>
+						</tr>
+						<tr>
+							<td class="r3">500 Domains </td>
+						</tr>
+						<tr>
+							<td class="r4">3TB Bandwidth</td>
+						</tr>
+						<tr>
+							<td class="r5">30 Email Accounts</td>
+							
+						</tr>
+						<tr>
+							<td class="r6">24/7 support</td>
+						</tr>
+						<tr>
+							<td class="r7"><button class="su">Sign Up</button></td>
+						</tr>
+							
+						</tbody>
+					</table>
+
+
+
+			</div>
+	
+</body>
+</html>
