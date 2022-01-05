@@ -1,0 +1,481 @@
+/* global styles */
+
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+    margin: auto;
+    overflow-x: hidden;
+    scrollbar-width: none; /*scroll bar firefox*/
+
+}
+
+/* scroll bar safari and chrome */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* background */
+
+
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://www.urby.in/blog/wp-content/uploads/2017/09/iceskiing-e1506504667758.jpg") no-repeat top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    height: 100vh;
+}
+
+
+/* flexbox */
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;    
+    width: 80vw;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+.link {
+    text-transform: capitalize;   
+    color: #fff;
+    font-size: 1.2em;
+    transition: .3s ;
+}
+
+.link:hover { 
+    font-weight: 600;
+    font-size: 1.5em;
+	transform: scale(1.5);
+	text-shadow: 0 0 5px #fff;
+}
+
+
+.title {
+    text-transform: capitalize;
+    color: #fff;
+    position: relative;
+    bottom: -30px;
+    font-weight: 900;
+    font-size: 1.75em;
+    display: inline-block;
+    transition: .7s ;
+}
+
+.title:hover {
+    cursor: pointer;
+    font-size: 2em;
+    font-family: 'Pushster', cursive;}
+.topic-section {
+    text-align: center;
+    height: 45vh;
+    display: flex;
+    flex-flow: column wrap;
+    height: 80vh;
+}
+
+
+/* Button and Logo Animation*/
+@keyframes move {
+    50% {
+        transform: translate(2em,0)
+    }
+    0%,100% {
+        transform: translate(1em,0)
+    }
+}
+
+
+
+.topic-section h1,h2 {
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 900;
+
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    
+}
+
+.btn {
+    margin-top: 0.5em;
+    padding: 1.4em 2.7em;
+    background-color: orangered;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 0 2em cyan;
+    font-size: 1.2em;
+    transition: .7s;
+    animation: move 3s infinite linear;
+    margin-top: 5.5em;
+}
+
+
+.btn:hover {
+    background-color: red;
+    font-size: 1.5em;
+    cursor: pointer
+}
+
+
+.hdr {
+    height: 100vh;
+    background: #fff;
+    width: 100vw;
+}
+.hdr > h2 {
+    color: #333;
+    font-size: 2.5em;
+    width: 100%;
+    text-align: center;
+}
+
+.hdr > p {
+    width: auto;
+    text-align: center;
+    color: black;
+    margin-bottom: 5.5em;
+    margin-top: 1.8em;
+}
+.hdr . {
+    color: black;
+
+}
+
+.card1,.card2,.card3 { 
+    width: 30vw;
+    background-color: grey;
+    border-right: 2px solid #000;
+
+}
+
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards img {
+    border: 1px solid black;
+    border-radius: 50%;   
+    height: 11.5em;
+    width: 11.5em;
+    margin-left: 0.5em;
+}
+
+.cards h2 {
+    color: black;
+    width: 100%;
+    text-align: center
+}
+
+.cards p {
+    text-indent: 1.3em;
+}
+
+.hdr {
+    height: 100vh;
+}
+
+.works {
+    height: 200vh;
+    background: rgb(221, 226, 235);
+    width: auto;
+    transform: translate(0,-1px);
+}
+.works h2 {
+    color: #333;
+    text-align: center;
+}
+.works p {
+    text-align: center;
+    color: block;
+    width: auto;
+    margin: 0.9em;
+    text-indent: 1.5em;
+}
+.works img {
+    height: 28em;
+    width: 28em;
+    margin: 0.3em;
+}
+
+.works h2 {
+    font-weight: 700;
+    font-size: 2.4em;
+}
+
+.our-works {
+    display: flex;
+    justify-content: center;
+
+}
+
+.our-works2 {
+    display: flex;
+    justify-content: center;
+}
+.subscribe,.works {
+    margin: -1.75em;
+    padding: 0;
+}
+.contact {
+    margin: -4.5em;
+    width: 100vw;
+}
+.subscribe h2 {
+    color: #333;
+    font-size: 2.2em; 
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+        top: 1.2em;
+        right: 3.5em;
+}
+.subscribe input {
+    text-align: center;
+    height: 9vh;
+    width: 50vw;
+}
+.subscribe {
+    height: 50vh;
+    margin-bottom: .5px;
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.subscribe .sub-btn{
+    width: 35%;
+    height:12vh;
+    padding: 0.5em 2em;
+    margin-left: 2.4em;
+    background-color: rgb(179, 110, 19);
+    color: #fff;
+    font-size: 1.6em;
+    transition: .7s ease;
+}
+
+.sub-btn:hover {
+    font-weight: bold;
+    background-color: rgb(255, 68, 0);
+    transform: scale(1.2);
+}
+
+.sub {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.contact-us {
+    height: 80vh;
+    background-color:  rgb(190, 181, 181);
+    width: 100vw;
+}
+
+.contact h2 {
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-top: 2.6em;
+    text-align: center;
+    transform: translate(0 , 0.3em);
+}
+
+.contact p, .contact h2{
+    color: black;
+}
+
+
+.contact .lorem {
+    text-align: center;
+}
+
+
+.personal-info {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: flex-end;
+    height: 50vh;
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+}
+
+.personal-info svg {
+    font-size: 2em;
+    font-weight: bold;
+}
+.input-field {
+    display: flex;
+    flex-flow: column wrap;
+    justify-items: center;
+    align-content: flex-start;
+    width: 50%;
+    position: absolute;
+        right: 3em;
+}
+
+.personal-info input {
+    height: 6vh;
+    width: 100%;
+    margin-bottom: 1.4em;
+}
+
+.personal-info .button {
+    text-align: center;
+    width: 18.5em;
+    height: 2.2em;
+    background-color: orange;
+    color: #fff;
+    font-size: 1.5em;
+    width: 100%;
+    transition: .7s ease;
+    margin-top: 1em;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    font-size: 1.8em;
+    font-weight: 700;
+    background-color: orangered;
+    overflow: hidden;
+}
+
+
+.loc { 
+    height: 100%;
+    width: 35%;
+    position: absolute;
+        left: 4.2em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+
+body{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.ftr { 
+    background-color: rgb(41, 38, 38);
+    color:rgb(170, 173, 177);
+	font-weight: bold;
+    height: 7vh;
+    width: 100vw;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em;
+}
+
+
+/*Mobile*/
+
+@media (max-width: 850px) {
+	body {
+	font-size: 10px;
+}
+.subscribe .sub-btn {
+	width: 35%;
+	height: 9vh;
+}
+.subscribe .input {
+	height: 10vh;
+	width: 65vw;
+}
+}
+
+@media (max-width: 550px) {
+	body {
+	font-size: 6px;
+}
+ .subscribe .sub-button {
+	height: 7vh;
+	width: 30%
+}
+.subscribe input {
+	height: auto;
+	width: auto;
+}
+
+
+@media (max-width: 380px) {
+	body {
+	font-size: 5px;
+}
+
+
+.our-works {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.our-works2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cards {
+	display: flex;
+	flex-direction: column;
+}
+
+.sub-btn{
+	height: 50%;
+	width: 60%;
+}
+
+
+@media (max-width: 305px) {
+	.sub {
+		display: flex;
+		flex-direction: column;
+	}
+	.sub .sub-btn {
+		width: 50vw;
+		margin-top: 1.5em
+	}
+	.sub .tel {
+		width: 60vw;
+	}
+	
+	body {
+		font-size: 3px;
+	}
+	}
+	
+}
+ 
