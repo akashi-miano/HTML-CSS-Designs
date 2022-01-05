@@ -1,0 +1,147 @@
+/*global styles*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	color: #fff;	
+}
+
+body {
+		background: url("https://images.unsplash.com/photo-1594843863977-b72cf8e3855e?ixid=MXwxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDF8fHxlbnwwfHx8&ixlib=rb-1.2.1&w=1000&q=80") no-repeat;
+		background-size: cover ;
+		background-attachment: fixed;
+		text-align: center;
+	}
+
+/*navbar and flexbox*/
+
+.link {
+	margin: 0 0.6em;
+	font-size: 1.3em;
+	text-transform: uppercase;
+}
+
+.main-bar {
+	margin-top: 2em;
+}
+.main-ul {
+	margin-left:2.5em; 
+}
+.main-ul {
+	display: flex;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column wrap;
+	height: 60vh;
+}
+/*Hover effects*/
+
+
+.link:hover {
+	font-weight: bold;
+	border-bottom: 4px solid #fff;
+	text-shadow: 0 0 3px #fff;
+}
+
+li:hover {
+	transform: scale(1.1);
+}
+
+li:hover {
+	transform: scale(1.1)		
+}
+
+.btn:hover {
+	color: #000;
+	background-color: gold;
+	border-radius: 5px;
+	border: 2px solid black;
+	cursor: pointer;
+}
+
+
+
+/*animations*/
+
+@keyframes trans {
+	0% {
+		transform: scale(0)
+	}
+	100% {
+		transform: scale(1)
+	}
+}
+
+.title {
+	
+	animation: trans 1 2.5s;
+	margin-bottom: 1.5em;
+	font-size: 5em;
+    font-family: 'Pushster', cursive;
+}
+
+.btn {
+	
+	all: unset;
+	border: 3px solid #fff;
+	color: #fff;
+	box-shadow: 0 0 5px #fff;
+	font-size: 2.4em;
+	padding: 0.5em 1.5em;
+	animation: trans 1 2.5s;
+	transition: .7s ease;
+}
+
+svg {
+  animation: hrt 2.5s 1 infinite linear; 
+}
+
+
+/*footer styles*/
+
+.ftr {
+	position: absolute;
+		bottom: 0;
+	background-color: #1b1b1b;
+	width: 100%;
+	height: 5.5vh;
+	text-transform: capitalize;
+	padding:  1em 0;
+	font-size: 1.1em;
+}
+
+/*Mobile*/
+
+@media (max-width: 700px) {
+	body {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 540px) {
+	body {
+		font-size: 8px;
+	}
+}
+
+@media (max-width: 400px) {
+	body {
+		font-size: 5px;
+	}
+}
+
+
+@media (max-width: 170px) {
+	body {
+		font-size: 3px;
+	}
+}
