@@ -45,6 +45,10 @@ body {
 	color: var(--clr-secondary);
 }
 
+.about-mobile {
+	display: none;
+}
+
 .main-nav a::after {
 	content: '';
 	display: block;
@@ -121,6 +125,9 @@ main {
 
 /*about*/
 
+section.about-mobile {
+	display: none
+}
 .about {
 	min-height: 100vh;
 	width: 100%;
@@ -385,11 +392,14 @@ footer {
 
 @media(max-width: 420px ) {
 	html {
-		font-size: 32.5%;
+		font-size: 30%;
 	}
 	.container a {
 		padding: 15px;
 	}
+	.about-desktop {
+	display: none;
+}
 	footer {
 		height: 10vh 
 	}
@@ -402,4 +412,51 @@ footer {
 	.contacts h2 {
 		margin-bottom: 40px
 	}
+	header .main-nav {
+		flex-direction: column;
+	}
+
+	section.about {
+		display: none;
+	}
+	section.about-mobile {
+		display: flex;
+}
+	.about-mobile {
+		display: unset
+}
+	section.about-mobile img {
+		height: auto;
+		max-width: 80%;
+	}
+	section.about-mobile h2 {
+	  width: 100%;
+	  text-align: center;
+	  font-size: 4rem;
+	  text-transform: uppercase;
+	  display: flex;
+	  justify-content: center;
+}	
+	section.about-mobile h3,p,li {
+		margin-left: 25px
+	}
+	.logo {
+		margin-bottom: 15px;
+
+}
+	.contacts p {
+		width: 100vw;
+}
+	.wrap svg, .wrap1 svg{
+		font-size: 10rem;
+}
+	.wrap p, .wrap1 p{
+		font-size: 2.5rem;
+}
+	.contacts h2 {
+		font-size: 7rem;
+		width: 110%;
+}
+	}
+
 }
