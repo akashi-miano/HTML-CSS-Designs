@@ -12,12 +12,17 @@
 	text-decoration: none;
 	font-family: var(--ff-primary);
 	overflow-x: hidden;
-	scroll-behavior: smooth
+	scroll-behavior: smooth;
 }
+
+*::-webkit-scrollbar {
+	  display: none;
+  }
 
 html {
 	font-size: 62.5%;
 }
+
 
 body {
 	
@@ -84,11 +89,13 @@ main {
 	text-transform: uppercase;
 	color: #c3c4c6;
 	font-size: 2rem;
+	overflow-y: hidden
 }
 .container h1 {
 	text-transform: uppercase;
 	color: #fff;
 	font-size: 5rem;
+	overflow-y: hidden
 }
 
 .container span {
@@ -441,7 +448,7 @@ footer {
 		margin-left: 25px
 	}
 	.logo {
-		margin-bottom: 15px;
+		margin-bottom: 25px;
 
 }
 	.contacts p {
