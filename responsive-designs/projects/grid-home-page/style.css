@@ -1,0 +1,80 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box
+}
+
+.container {
+	height: 100vh;
+	display: grid;
+	grid-template-areas:
+	"header header header"	
+	"nav nav sidebar"
+	"content content sidebar"
+	"footer footer footer"
+}
+
+aside {
+	grid-area: sidebar;
+	background-color: blue;
+	color: #fff;
+	padding: 15px;
+}
+
+
+footer {
+	grid-area: footer;
+	background-color: dodgerblue;
+	color: #fff;
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 10px;
+}
+
+header {
+	grid-area: header ;
+	background-color: dodgerblue;
+	color: #fff;
+	text-align: center;
+	font-size: 2.5rem;
+	padding: 25px;
+	border-bottom: 1px solid #333;
+
+}
+
+nav {
+	grid-area: nav;
+	background-color: dodgerblue;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	
+}
+li {
+	list-style: none;
+	text-transform: capitalize;
+	font-size: 1.5rem;
+}
+
+main {
+	grid-area: content
+	text-align: start;
+}
+
+main h2 {
+	font-size: 2rem;
+	text-transform: capitalize;
+	margin: 25px 15px;
+}
+
+main p {
+	margin: 0 15px;
+}

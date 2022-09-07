@@ -1,0 +1,45 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+input {
+	margin: 5px 2px;
+	padding: .5em;
+}
+
+input:focus {
+	border: none;
+}
+
+.default:focus {
+	outline: 1.5px solid dodgerblue; 
+	box-shadow: 0 0 5px 0 #333;
+}
+
+.scuccess:focus {
+	outline: 1.5px solid rgba(0,255,0, 0.7);
+	box-shadow: 0 0 5px 0 #333;
+}
+
+.error:focus {
+	outline: 1.5px solid rgba(255,0,0,1);
+	box-shadow: 0 0 5px 0 #333;
+}
+
+.large {
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.small {
+	font-size: .7rem;
+}
+
+.disabled:disabled {
+	background-color: #ddd;
+	border: 1px solid #aaa; 
+	color: #333;
+}

@@ -1,0 +1,132 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.main-container {
+	display: flex
+}
+.container1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center ;
+	align-items: center;
+	color: #fff;
+	width: 50%;
+	background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.5)), url("https://media.istockphoto.com/photos/sirloin-steaks-with-fresh-thyme-picture-id972852490?k=20&m=972852490&s=612x612&w=0&h=Xef4wYtVIAQuKd1H5CR69Bb6YXTV4U7UEEtZAkp2z9Q=") no-repeat;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	border: 1px solid black;
+	position: relative
+}
+
+.container2 {
+	width: 50%;
+}
+
+.main-title {
+	font-size: 3.5rem;
+	max-width: 400px;
+	font-weight: 300;
+	text-align: center;
+}
+
+strong {
+	font-weight: 700;
+}
+
+.top-txt {
+	color: #F18119;
+	border-top: 4px solid #F18119;
+	position: absolute;
+	top: 0;
+}
+
+.main-sub-title {
+	color: #F18119;
+	font-weight: 900;
+	font-size: 1.3rem;
+}
+
+.container2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container2-title {
+	color: #404040;
+	font-size: 1.75rem;
+	margin-top: 1.5rem
+}
+
+.container2-sub-title {
+	color: #F18119;
+	font-size: 1.4rem;
+	font-weight: 900;
+}
+
+.container2-p {
+	max-width: 300px;
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+.link {
+	padding: .5em 1em;
+	text-decoration: none;
+	border: 1px solid #404040;
+	border-radius: 10px;
+	color: #000;
+	width: 50%;
+	text-align: center;
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+	transition: transform 250ms
+}
+
+.link3 {
+	display: inline-block;
+	color: #fff;
+	background: linear-gradient(to left, #FF713B, #FFA51D);
+	border: 0;
+	transition: 500ms
+}
+
+.link:focus {
+	transform: scale(1.1)
+}
+
+.link3:hover,
+.link3:focus {
+	transform: scale(1.1)
+}
+
+.secret {
+	color: #404040;
+	font-size: .9rem;
+	letter-spacing: 1px
+}
+
+@media (max-width: 750px) {
+	.main-container {
+		flex-direction: column;
+	}
+	.container1,
+	.container2 {
+		width: 100%
+	}
+
+	html {
+		font-size: 75%;
+	}
+}

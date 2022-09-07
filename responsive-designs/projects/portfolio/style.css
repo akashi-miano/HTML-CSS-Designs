@@ -1,0 +1,106 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: dodgerblue;
+	height: 15vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	color: #fff;
+	font-family: sans-serif;
+}
+
+
+.about h2 {
+	margin: 25px;
+}
+
+.about p {
+	margin: 0 50px;
+}
+
+.skills {
+	background-color: dodgerblue;
+	font-family: sans-serif;
+	margin: 30px 0;
+	color: #fff;
+	padding: 1.3em; 
+	font-weight: bold;
+}
+
+.skills ul {
+	margin: 25px 35px;
+}
+li {
+	list-style: none;
+	font-size: 1.2rem;
+}
+
+
+img {
+	height: 250pex;
+	width: 250px;
+}
+
+.img1 {
+	margin-top: 25px;
+}
+.content {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	gap: 15px;
+	margin-left: 50px;
+}
+
+.projects {
+	padding: 35px
+}
+
+.projects h2 {
+	font-family: sans-serif;
+}
+
+
+.contact h2 {
+	font-family: sans-serif;
+	margin-bottom: 25px
+}
+
+.btn {
+	background-color: blue;
+	color: #fff;
+	border-radius: .5em;
+	padding: .5em;
+	width: 70px;
+}
+
+.contact {
+	margin-left: 50px;
+	margin-top: 35px;
+}
+
+.input {
+	margin-left: 65px;
+}
+
+
+footer {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	align-items: center;
+	height: 10vh;
+	background-color: dodgerblue;
+	font-family: sans-serif;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+}

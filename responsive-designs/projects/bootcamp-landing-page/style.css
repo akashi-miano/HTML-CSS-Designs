@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*, 
+*::after, 
+*::before 
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	scrollbar-width: none
+}
+
+*::-webkit-scrollbar { display: none; }
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #000;
+}
+
+.main-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url('https://assets.entrepreneur.com/content/3x2/2000/20150708172005-coding-working-workspace-apple-macintosh.jpeg?crop=4:3');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+
+.down-arrow {
+	position: absolute;
+	bottom: 1rem;
+}
+.down-arrow:hover {
+	cursor: pointer
+}
+.nav-top {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	background-color: #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .5rem 1rem;
+	z-index: 1;
+	animation: nav-enter 500ms linear 600ms backwards;
+}
+
+.logo {
+	width: 50px;
+	margin-left: 35px;
+}
+
+.nav-list {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-list a {
+	color: #fff;
+	text-decoration: none;
+	margin-right: 35px;
+	transition: color 100ms;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+	color: #c4c1c0
+}
+
+.title {
+	font-size: 3rem;
+	margin-bottom: .5rem;
+	animation: title-enter 500ms linear 100ms
+}
+
+.sub-title {
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	margin-bottom: 1.3rem;
+	animation: sub-title-enter 500ms linear 200ms backwards
+}
+
+.btn {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	background-color: dodgerblue;
+	border-radius: 1em;
+	border: none; 
+	outline: none;
+}
+
+.curriculum-section {
+	padding: 3rem; 
+}
+.section-title {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 3rem;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(auto, 450px));
+	column-gap: 5rem;
+	row-gap: 2.5rem;
+	justify-content: center;
+	width: 100vw;
+	align-items: center;
+}
+
+.flex-container{
+	display: flex;
+	align-items: center;
+}
+
+.icon {
+	min-height: 50px;
+	min-width: 50px;
+	margin-right: 1rem;
+}
+
+.flex-container p {
+	max-width: 450px;
+}
+
+.free {
+	background-color: dodgerblue;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow:  column;
+	padding: 25px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+.free h2 {
+	margin-bottom: 1.5rem;
+}
+
+.free p {
+	text-transform: lowercase;
+	font-size: 1rem;
+	max-width: 350px;
+}
+
+.contact h2 {
+	text-align: center;
+}
+
+.contact {
+	padding: 50px 
+}
+
+.contact input,
+textarea {
+	width: 100%;
+	margin-bottom: .6rem;
+	margin-top: .25rem;
+	border: 1px solid black;
+	color: inherit;
+	padding: .35em;
+	border-radius: 5px;
+	transition: border-color 100ms
+}
+
+textarea {
+	resize: vertical;
+	min-height:  100px;
+	max-height : 150px;
+}
+
+.contact input:focus ,
+textarea:focus {
+	outline: none;
+	border: 2px solid dodgerblue;
+}
+
+form {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.contact-btn {
+	border: none;
+	border-radius: 5px;
+	padding: .7em 1.2em;
+}
+
+.button-div {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.nav {
+	background-color: #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .5rem 1rem;
+}
+
+/* pricing section */
+
+.free {
+}
+.pricing-container {
+	display: flex;
+	align-items: flex-start;
+}
+.price-card {
+	background-color: #fff;
+	color: #000;
+	padding: 1em 1.5em;
+	width: 300px;
+	border: 1px solid black;
+	position: relative;
+	transition: transform 100ms
+}
+
+.price-card:hover {
+	transform: scale(1.05);
+}
+
+.price-card h2 {
+	text-transform: capitalize;
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+.accent {
+	min-height: 500px;
+	border: none;
+	border-radius: 10px;
+	border-top: 1px solid black;
+}
+
+.price-card1 , 
+.price-card3 {
+	position: relative;
+	top: 30px;
+}
+
+.price-card1 {
+	transform-origin: right
+}
+.price-card3 {
+	transform-origin: left; 
+}
+
+p.price {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+p.price::after {
+	content: '/mo';
+	font-size: 1rem;
+	font-weight: 400;
+}
+.price-card p:last-child {
+	text-decoration: line-through;
+}
+
+/* media queries */ 
+
+@media (max-width: 1100px) {
+	
+	.main-header {
+		background-position-x: 30%
+	}
+	.grid-container {
+		grid-template-columns: minmax(auto, 450px)
+	}
+	.pricing-container {
+		flex-direction: column;
+		margin: 5px;
+		overflow-y: hidden;
+		padding: 50px 25px;
+	}
+
+	.price-card {
+		border: none;
+		position: static; 
+		margin-bottom: 15px;
+		position: revert
+	}
+
+	.free {
+		flex-direction: column
+	}
+	.accent {
+		min-height: auto;
+		border-radius: 0;
+	}
+		.price-card  {
+		transform-origin: center;
+		border: 1px solid black
+	}
+}	
+	
+
+
+@media (max-width: 600px) {
+	html,body {
+		font-size: 10px
+	}
+
+	.grid-container {
+		grid-template-columns: minmax(auto, 300px)
+	}
+
+	.icon {
+		transform: scale(.75)
+	}
+}
+	.btn  {
+		padding: .5em 1em;
+	   transition: 100ms	
+	}
+
+	.btn:hover {
+		background-color: hsl(200, 100%, 30%);	
+	}
+
+
+@media (max-width: 400px) {
+	html,body{
+		font-size: 7px;
+	}
+
+	.logo {
+		width: 30px;
+	}
+
+	.nav {
+		padding: 1em 
+	}
+
+	.icon {
+		transform: scale(0.5)
+	}
+
+	.btn  {
+		padding: .25em .5em 
+	}
+}
+
+/* Animations */ 
+
+@keyframes shake {
+	25% {
+	transform: rotate(5deg)
+}
+	75% {
+	transform: rotate(-5deg)
+}
+	
+}
+
+@keyframes up-and-down {
+	from {
+	transform: translateY(0)
+}
+	to {
+	transform: translateY(-10px)
+}
+}
+
+.flex-container:hover .icon {
+	animation: shake 100ms;
+}
+
+
+.down-arrow{
+	animation: 
+	down-arrow-enter 200ms linear backwards 800ms,
+	up-and-down 1s infinite linear alternate 1s;
+;
+}
+
+
+.grow-btn:hover {
+	transform: scale(1.05);
+}
+
+.grow-btn {
+	animation: btn-enter 500ms linear 700ms backwards
+}
+
+
+@keyframes title-enter {
+	from {
+	transform: translateX(-100vw)
+}
+}
+
+
+@keyframes sub-title-enter {
+	from {
+	transform: translateX(100vw)
+}
+}
+
+@keyframes btn-enter {
+	from {
+	transform: scale(0)
+}
+}
+
+@keyframes down-arrow-enter {
+	from {
+	transform:  rotate(180deg) scale(0)
+}
+}
+
+
+@keyframes nav-enter {
+	from {
+	transform: translateY(-100vh)
+}
+}

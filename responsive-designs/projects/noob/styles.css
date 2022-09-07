@@ -1,0 +1,27 @@
+h1 {
+	text-align: center
+}
+
+h2 {
+	color: #fff;
+	font-family: sans-serif;
+}
+
+
+.bands h2 {
+	color: #000;
+}
+.k  {
+	background-color: darkgreen;
+	
+}
+
+
+ol li:first-child,  
+ul li:first-child {
+	color: cyan
+}
+
+ol li:nth-child(5n) {
+	text-decoration: line-through
+}
