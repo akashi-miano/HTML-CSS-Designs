@@ -1,0 +1,468 @@
+/* variables */ 
+
+:root {
+	--color-bg: #111;
+	--title-fs: 3rem;
+	--spacing: .5rem;
+	--space: 1.5rem;
+}
+
+/* global styles */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box
+}
+
+html {
+	scroll-behavior: smooth
+}
+
+body {
+	line-height: 1.6
+}
+
+h1,h2,h3 {
+	line-height: 1.1
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+strong {
+	font-weight: 700;
+}
+
+.flow-content > * + * {
+	margin-top: var(--flow-space, var(--space));
+}
+
+
+.grid {
+	display: grid
+}
+
+.grid--1x2 {
+	grid-template-columns: repeat(2, minmax(auto, 1fr))
+}
+
+.grid--1x3 {
+	grid-template-columns: repeat(3, minmax(auto, 1fr))
+}
+
+.grid--1x4 {
+	grid-template-columns: repeat(4, minmax(auto, 1fr))
+}
+
+.bg--dark {
+	background: #222;
+	color: #fff
+}
+
+.bg--accent {
+	background: #08acac;
+	color: #000
+}
+
+
+/* buttons */
+
+.btn {
+	display: inline-block;
+	border: 0;
+	padding: .5em 1.5em;
+}
+
+.btn--accent {
+	color: #000;
+	background: cyan;
+	font-weight: 900;
+}
+
+/* hero */
+
+
+.hero {
+	padding: 1.5em 3em;
+	height: 125vh;
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero__nav {
+	display: flex;
+	justify-content: center;
+	background: #111;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 1.5em 3em;
+	text-transform: uppercase;
+	z-index: 1
+}
+
+.hero__nav-list {
+	display: flex;
+	gap: 25px
+}
+
+.hero__link {
+	color: #fff;
+	transition: color 250ms
+}
+
+.hero__link:hover,
+.hero__link:focus {
+	color: #aaa
+}
+
+.hero__content-wrapper {
+	gap: 25px;
+	place-items: center;
+	width: fit-content;
+}
+
+.hero__content {
+	position: relative;
+	margin-top: 1.5rem;
+}
+
+.hero__title {
+margin-top: 2rem
+}
+
+.hero__content h1::before {
+	content: 'START LEARNING MAGIC TODAY';
+	white-space: nowrap;
+	display: block;
+	font-weight: 400;
+	font-size: 1rem;
+	background: #222;
+	color: #fff;
+	position: absolute;
+	top: -.5em;
+	left: 0;
+	padding: .5em 1em;
+}
+
+.hero__content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 25px
+}
+
+.hero__img-wrapper {
+	max-width: 750px;
+	width: 85%;
+}
+
+.hero__img {
+	width: 100%;
+}
+
+.hero__btn {
+	align-self: flex-start;
+}
+
+/* about */
+
+.about {
+	margin-top: 3em;
+	background: var(--color-bg);
+}
+
+.about__title {
+	color: cyan;
+	text-align: center;
+	padding: 1.5em
+}
+.about__content-wrapper {
+	color: #fff;
+	padding: 3em;
+	gap: 25px
+}
+
+.about__img {
+	width: 75%
+}
+
+/* info */
+
+
+.info {
+	padding: 1.5em 3em;
+}
+
+.info-wrapper {
+	gap: 25px;
+}
+
+.info__main-title {
+	text-align: center;
+	margin-bottom: 1.5rem
+}
+
+.info img {
+	width: 100px;
+	height: 100px;
+}
+
+.info__card {
+	--flow-space: .5rem;
+	position: relative
+}
+
+.info__card::before {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: cyan;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-.5rem, -.5rem);
+	z-index: -1
+}
+
+
+
+/* footer--accent */
+
+.footer {
+	background-image: linear-gradient(rgba(20, 205, 200,0.7),rgba(20, 205, 200,0.7)), url('https://s35691.pcdn.co/wp-content/uploads/2022/01/playing-cards-poker-cards-in-the-hand-of-a-young-man-picture-id1131822944.jpg') ;
+	background-size: cover;
+	background-position: center;
+	color: #000;
+	text-align: center;
+	padding: 2.5em 5em;
+	font-size: 1.125rem;
+}
+
+.footer button {
+	background: #fff;
+	color: #000;
+	padding: 1em 2.5em
+}
+
+/* services */
+
+.services {
+	padding: 6em;
+	position: relative
+}
+
+.services__content {
+	gap: 25px
+}
+
+
+.services__header {
+	text-align: center;
+}
+
+.services__desc {
+	margin: 1.5rem 0;
+}
+
+.services__card {
+	padding: 3em;
+	min-height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 25px;
+	position: relative;
+	max-width: 500px
+}
+
+.services__card .name {
+	font-weight: 700 ;
+	color: cyan
+}
+
+
+.name--accent {
+	color: #fff;
+	font-weight: 900;
+}
+
+
+.bg--dark::before {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: cyan;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-.5rem, -.5rem);
+	z-index: -1
+}
+
+.bg--accent::before {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: #222;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-.5rem, -.5rem);
+	z-index: -1
+}
+
+.services__header h2::before {
+	content: 'START LEARNING MAGIC TODAY';
+	display: block;
+	font-size: 1rem;
+	background: #222;
+	color: #fff;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0 auto;
+	font-weight: 400;
+	padding: .3em .6em;
+	width: fit-content;
+	white-space: nowrap;
+}
+
+/* footer--light */
+
+footer.footer {
+	position: relative;
+	background: #fff;
+	background-image: linear-gradient(rgba(225, 255, 255,0.7),rgba(255, 255, 255,0.7)), url('https://s35691.pcdn.co/wp-content/uploads/2022/01/playing-cards-poker-cards-in-the-hand-of-a-young-man-picture-id1131822944.jpg') ;
+	background-size: cover;
+	background-position: center;
+	padding: 10em;
+}
+
+footer h2::before {
+	content: 'START LEARNING MAGIC TODAY';
+	display: block;
+	background: #222;
+	color: #fff;
+	padding: .5em 1em;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 1rem;
+	font-weight: 400;
+	
+}
+
+/* media */ 
+
+@media (max-width: 750px) {
+	
+	.hero {
+		padding: 0;
+		height: auto
+	}
+	
+	.hero__img-wrapper {
+		width: 100%;
+	}
+	
+	.hero__sub-title{
+		padding: 0 2rem
+	}
+	
+	.hero__content-wrapper,
+	.about__content-wrapper,
+	.info-wrapper {
+		grid-template-columns: minmax(auto, 1fr);
+		text-align: center;
+	}
+	
+	.hero__img-wrapper {
+		order: -1;
+		width: 100%
+	}
+
+	.hero__sub-title {
+		max-width: 450px
+	}
+
+	.hero__btn {
+		align-self: center;
+	}
+
+	.hero__content {
+		--flow-space: .5rem;
+	}
+
+	.info {
+		padding: 2em
+	}
+
+	.info__card::before {
+		left: 50%;
+		transform: translate(-4em,-.5em)
+	}
+
+	.footer {
+		padding: 3em;
+	}
+
+	.hero__title {
+		margin: 0
+	}
+
+	.hero__content h1::before {
+		left: 50%;
+		top: -3.5em;
+		transform: translate(-50%,-50%)
+
+	}
+
+	.services__content {
+		grid-template-columns: minmax(auto, 1fr);
+		padding: 0 2em;
+	}
+
+	.services__card {
+		min-height: auto;
+		margin-bottom: 2rem;
+		padding: 1em;
+	}
+
+
+	footer.footer {
+		padding: 1em
+	}
+
+	.services {
+		padding: 1em
+	}
+
+	.services__header h2::before {
+		top:0
+	}
+
+	footer h2::before {
+		white-space: nowrap;
+		top: 0;
+		font-size: 1rem;
+	}
+
+}
